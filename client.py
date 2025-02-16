@@ -18,7 +18,7 @@ def start_client(server_ip, server_port, username, password):
 
     chan = client.get_transport().open_session()
     # Removed the initial greeting from the client:
-    # chan.send("Client Connected.\n")
+    print("Client Connected!\n")
 
     current_dir = os.getcwd()
 
